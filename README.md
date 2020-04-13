@@ -1,4 +1,4 @@
-# Branch Test 1
+# Codecamp #5 Homework
 
 This is my homework for Thailand Code Camp #5.
 I am learning Full Stack JavaScript.
