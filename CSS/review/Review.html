@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>
+                CSS Syntax
+            </th>
+            <th>
+                CSS Writting
+            </th>
+            <th>
+                Selector
+            </th>
+            <th>
+                Combinator
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <label>มี 2 แบบ คือ</label>
+                <ol type="1">
+                    <li>Selector</li>
+                    <li>Declaration</li>
+                </ol>
+            </td>
+            <td>
+                <label>มี 3 แบบ คือ</label>
+                <ol type="1">
+                    <li>Inline CSS</li>
+                    <li>Internal CSS</li>
+                    <li>External CSS</li>
+                </ol>
+            </td>
+            <td>
+                <label>มี 5 แบบ คือ</label>
+                <ol type="1">
+                    <li>Simple selectors</li>
+                    <li>Combinator selectors</li>
+                    <li>Pseudo-class selectors</li>
+                    <li>Pseudo-elements selectors</li>
+                    <li>Attribute selectors</li>
+                </ol>
+            </td>
+            <td>
+                <label>มี 4 แบบ คือ</label>
+                <ol type="1">
+                    <li>descendant selector (space)</li>
+                    <li>child selector (>)</li>
+                    <li>adjacent sibling selector (+)</li>
+                    <li>general sibling selector (~)</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <div>
+        <h2>For example CSS Syntax</h2>
+        <img src="https://www.w3schools.com/css/selector.gif" style="width:25%">
+        <p>h1 {color:blue}</p>
+        <p>h1 is selector</p>
+        <p>{color:blue} is declaration</p>
+    </div>
+    <div>
+        <h2>For example css Writting</h2>
+        <p>1.Inline CSS : put CSS in tag.</p>
+        <img src="./img/inline.png" style="width:25%">
+        <p>2.Internal CSS : put CSS in the same file with html. usally we put in head.</p>
+        <img src="./img/internal.png" style="width:15%">
+        <p>3.External CSS : Create file CSS and when you want to use it just import that file to html.</p>
+        <img src="./img/external.png" style="width:15%">
+
+    </div>
+    <div>
+        <h2>Selector example case</h2>
+        <p>1. Simple selectors (select elements based on name, id, class)</p>
+        <img src="./img/simpleSelector.png" style="width:15%">
+        <p>2. Combinator selectors (select elements based on a specific relationship between them)</p>
+        <i style="color: red;">An example is below next topic.</i>
+        <p>3. Pseudo-class selectors (select elements based on a certain state)</p>
+        <img src="./img/pseoduClass.png" style="width:15%">
+        <p>4. Pseudo-elements selectors (select and style a part of an element)</p>
+        <img src="./img/pesoduElement.png" style="width:15%">
+        <br>
+        <i style="color: red;">Right now my opinion pseodu-class and pseodu-element pretty much the same how to use just you have to know which one is use for.</i>
+        <p>5. Attribute selectors (select elements based on an attribute or attribute value)</p>
+        <img src="./img/attributeSelector2.png" style="width:25%">
+        <p>This mean select the tag a that has attrubute name target.</p>
+        </p>
+        <img src="./img/attributeSelector.png" style="width:25%">
+    </div>
+
+    <div>
+        <h2>Combinator example </h2>
+        <ol type="1">
+            <li>descendant selector (space) : <span style="color: green;">div p {color:green;}</span> -> Every P inside Div.</li>
+            <img src="./img/ComDescendant.png" style="width: 25%;">
+            <li>child selector (>) : <span style="color: green;">div > p {color:green;}</span> -> Every P inside Div down 1 level no more than that.</li>
+            <img src="./img/ComChild.png" style="width: 25%;">
+            <li>adjacent sibling selector (+) : <span style="color: green;">div + p {color:green;}</span> -> Only P next to Div.</li>
+            <img src="./img/ComAdjancentSibling.png" style="width: 25%;">
+            <li>general sibling selector (~) : <span style="color: green;">div ~ p {color:green;}</span> -> Every P same level with Div.</li>
+            <img src="./img/ComGeneralSibling.png" style="width: 25%;">
+        </ol>
+        </span>
+    </div>
+    <hr>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Unit</th>
+                <th>Differention</th>
+            </tr>
+            <tr>
+                <td>เปรียบเทียบ Element คือ คน property คือ ชิ้นส่วนหรืออวัยวะของคน</td>
+                <td>value คือ บอกลักษณะหรือขนาดของชิ้นส่วนหรืออวัยะวะของ element</td>
+                <td>unit เป็นตัวบงบอก ขนาดของ value อีกที่ โดยมีหลายแบบ เช่น px,em,% เป็นต้น</td>
+                <td>ทั้งสามอย่างมีหน้าที่ที่ตายตัวอยู่แล้วเพราะฉะนั้นจึงแตกต่างกันโดยสิ้นเชิง เราไม่สามารถ เอา value ไปใส่ แทนที่ property และเอา unit มาใส่แทนที่ value ได้ ทั้งสามส่วนทำงานด้วยกัน <br> ex. <span style="color: red;">{width:15px}</span>width
+                    คือ property 15 คือ value และ px คือ unit</td>
+            </tr>
+        </table>
+        <div>
+            <p>Property มี ทั้งหมด ดังนี้</p>
+            <ol>
+                <li>
+                    Property for content: color , size , font , text, list-style-type, Height, Width, background
+                </li>
+                <li>
+                    property for border : border, table
+                </li>
+                <li>
+                    property for padding : padding (top right buttom left)
+                </li>
+                <li>
+                    property for margin : margin (top right buttom left)
+                </li>
+                <li>
+                    property for element : display, Height, Width, Position, Float, Align, Flex, Grid
+                </li>
+                <img src="https://qph.fs.quoracdn.net/main-qimg-c878e8a880644d3a5b06c2f517db7e5a" style="width: 20%;">
+            </ol>
+            <p>Unit มี ทั้งหมด ดังนี้</p>
+            <img src="./img/value.png" style="width:25%">
+        </div>
+    </div>
+    <hr>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Value in Display Property</th>
+                <th>Grid VS Flex</th>
+                <th>Justify VS Align</th>
+                <th>Position</th>
+                <th>Z-index</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>inline</li>
+                        <li>block</li>
+                        <li>contents</li>
+                        <li>flex</li>
+                        <li>grid</li>
+                        <li>inline-block</li>
+                        <li>inline-flex</li>
+                        <li>inline-grid</li>
+                        <li>inline-table</li>
+                        <li>list-item</li>
+                        <li>run-in</li>
+                        <li>table</li>
+                        <li>table-caption</li>
+                        <li>table-column-group</li>
+                        <li>table-header-group</li>
+                        <li>table-footer-group</li>
+                        <li>table-row-group</li>
+                        <li>table-cell</li>
+                        <li>table-column</li>
+                        <li>table-row</li>
+                        <li>none</li>
+                        <li>initial</li>
+                        <li>inherit</li>
+                    </ul>
+                </td>
+                <td>Flex ใช้ในการจัดรูปแบบแกน X แกนเดียวได้ง่าย ส่วน Grid ใช้ในการจัดการ แกน X และ Y ของ content</td>
+                <td>Justify ใช้จัดการแนวนอน Align ใช้การแนวตั้ง</td>
+                <td>เป็นการย้าย content หรือ item ที่ต้องการไปอยู่ในส่วนต่างๆของหน้าเว็บ hightlight sticky(เมนูข้างบนเลื่อนตามเสมอ) !</td>
+                <td>เป็นการจัด content หรือ item ใน มิติที่ สาม นั้นก็คือ การจะย้ายไปข้างหน้า หรือย้ายไปข้างหลัง</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>

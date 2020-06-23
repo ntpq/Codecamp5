@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>From Respeonsive by ntpq</title>
+    <style>
+        * {
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        body>p {
+            text-indent: 50px;
+            text-align: justify;
+            padding: 10px 10px 10px 10px;
+            margin: 30px 65px 30px 65px;
+            font-size: 22px;
+        }
+        
+        .margin-center {
+            margin: 30px 65px 30px 65px;
+        }
+        
+        .background {
+            background-image: url("./suite.jpg");
+            height: 400px;
+            display: block;
+            width: 100%;
+            background-size: cover;
+        }
+        
+        form {
+            margin-top: -200px;
+            background-color: white;
+            border-radius: 20px;
+            z-index: 1;
+            margin-left: 65px;
+            margin-right: 65px;
+            padding-bottom: 60px;
+            box-shadow: 0px 1px 20px 20px rgba(234, 229, 229, 0.2784313725490196);
+        }
+        
+        iframe {
+            width: 90%;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-items: stretch;
+        }
+        
+        .container>div {
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+        
+        .grid-1-3 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        
+        input[type=submit] {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            background-color: red;
+            font-size: 30px;
+            margin-top: 12px;
+            padding: 5px 60px;
+            color: white;
+            width: auto;
+            border-radius: 15px;
+        }
+        
+        textarea,
+        input {
+            font-size: 20px;
+            width: 100%;
+            border: 1px solid #e6e3e3;
+            border-radius: 5px;
+            color: #636363;
+        }
+        
+        .head-red {
+            color: red;
+            font-size: 60px;
+        }
+        
+        .footer {
+            text-align: center;
+        }
+        
+        .footer>p:first-child {
+            color: red;
+            font-size: 25px;
+        }
+        
+        @media (max-width: 1024px) {
+            iframe {
+                width: 90%;
+            }
+            .container-ipad {
+                display: grid;
+                grid-template-columns: auto;
+                justify-items: stretch;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            iframe {
+                width: 70%;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: auto;
+                justify-items: stretch;
+            }
+            .container>div {
+                grid-column-start: 1;
+                grid-column-end: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+    </div>
+    <form action="#">
+        <h1>Contact us <span style="color: red;">today</span></h1>
+        <div class="container">
+            <div>
+                <p>Your Name (required)</p>
+                <input type="text" size="40">
+            </div>
+            <div>
+                <p>Your Email (required)</p>
+                <input type="text" size="40">
+            </div>
+            <div class="grid-1-3">
+                <p>Subject</p>
+                <input type="text" size="40">
+            </div>
+            <div class="grid-1-3">
+                <p>Your Message</p>
+                <textarea name="message" id="" cols="40" rows="7"></textarea>
+            </div>
+            <div class="grid-1-3">
+                <input type="submit" value="SEND">
+            </div>
+        </div>
+    </form>
+    <p>
+
+        Your Name (required) Your Email (required) Subject Your Message Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and expertise within the entirety of the digital spectrum. With headquarters located
+        in Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.</p>
+    <iframe class="margin-center" height="425" src="https://www.youtube.com/embed/r0q6a_9fg_Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container container-ipad">
+        <div>
+            <div class="head-red">
+                Digital<br>Strategy
+            </div>
+            <p>Business Intelligence</p>
+            <p>SEO – Search Engine Optimization</p>
+            <p>SEM streategy</p>
+            <p>Digital Content</p>
+            <p>Branding Design</p>
+            <p>UX & UI Design</p>
+            <p>Product Prototype</p>
+        </div>
+        <div>
+            <div class="head-red">
+                Digital<br>Production
+            </div>
+            <p>WebSites & Microsites</p>
+            <p>Responsive Design / Development</p>
+            <p>Mobile APP & Games</p>
+            <p>Intranet & Extranet</p>
+            <p>Virtual & Augmented Reality</p>
+            <p>Interactive Installations</p>
+        </div>
+        <div>
+            <div class="head-red">
+                Digital<br>Strategy
+            </div>
+            <p>Business Intelligence</p>
+            <p>SEO – Search Engine Optimization</p>
+            <p>SEM streategy</p>
+            <p>Digital Content</p>
+            <p>Branding Design</p>
+            <p>UX & UI Design</p>
+            <p>Product Prototype</p>
+        </div>
+        <div>
+            <div class="head-red">
+                Digital<br>Production
+            </div>
+            <p>WebSites & Microsites</p>
+            <p>Responsive Design / Development</p>
+            <p>Mobile APP & Games</p>
+            <p>Intranet & Extranet</p>
+            <p>Virtual & Augmented Reality</p>
+            <p>Interactive Installations</p>
+        </div>
+        <div>
+            <div class="head-red">
+                Digital<br>Strategy
+            </div>
+            <p>Business Intelligence</p>
+            <p>SEO – Search Engine Optimization</p>
+            <p>SEM streategy</p>
+            <p>Digital Content</p>
+            <p>Branding Design</p>
+            <p>UX & UI Design</p>
+            <p>Product Prototype</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Our Clients</p>
+        <p>We partner up with forward thinking clients,<br> being an extension of it’s marketing area.</p>
+    </div>
+</body>
+
+</html>

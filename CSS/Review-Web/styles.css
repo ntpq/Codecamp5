@@ -1,0 +1,166 @@
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    justify-content: center;
+}
+
+.left-flex {
+    justify-content: flex-start;
+}
+
+.right-flex {
+    justify-content: flex-end;
+    padding: 24px;
+}
+
+.center-flex {
+    justify-content: center;
+}
+
+.top-menue {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.menue {
+    padding: 24px;
+}
+
+.pading-top {
+    padding: 8px 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.padding20 {
+    padding: 20px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.behind {
+    z-index: -1;
+}
+
+.box {
+    position: relative;
+}
+
+.top-left {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    text-transform: uppercase;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    text-transform: uppercase;
+}
+
+.bottom-left-small {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    text-transform: uppercase;
+}
+
+.text-white {
+    color: white;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+}
+
+.container-grid-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-gap-100 {
+    grid-gap: 100px;
+}
+
+.container-grid-4-social {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: right;
+    grid-gap: 10px;
+}
+
+.container-grid-4 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    grid-gap: 150px;
+}
+
+.padding-left {
+    padding-left: 50px;
+}
+
+.padding-right {
+    padding-right: 35px;
+}
+
+.padding-left-p {
+    padding-left: 100px;
+}
+
+.padding-right-p {
+    padding-right: 100px;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
+}
+
+.bottom-menue {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+    padding-left: 0px;
+}
+
+.padding-bottom-menue {
+    padding: 40px 40px 0px 40px;
+}
+
+.bottom-menue>div>p {
+    padding-right: 10px;
+    padding-left: 40px;
+    font-size: 10px;
+}
+
+.bottom-menue>ul>li {
+    padding-right: 10px;
+    font-size: 10px;
+}
+
+.bottom-menue>ul {
+    padding-right: 40px;
+}

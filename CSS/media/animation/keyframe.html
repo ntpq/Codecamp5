@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab animation 1</title>
+    <style>
+        * {
+            font-size: 50px;
+            margin: 30px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: auto;
+            text-align: center;
+        }
+        
+        .div-1 {
+            color: red;
+            animation-name: color;
+            animation-duration: 5s;
+        }
+        
+        .div-2 {
+            border: 1px solid black;
+            width: 100%;
+            animation: width;
+            animation-duration: 5s;
+        }
+        
+        .div-3 {
+            animation: border;
+            animation-duration: 5s;
+        }
+        
+        .div-4 {
+            background-color: black;
+            color: white;
+            animation: background;
+            animation-duration: 5s;
+        }
+        
+        .div-5 {
+            position: relative;
+            left: -1000px;
+            animation: position;
+            animation-duration: 10s;
+        }
+        
+        .div-6 {
+            animation-name: display;
+            animation-duration: 5s;
+        }
+        
+        .div-7 {
+            animation-name: d1;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: 2s;
+            animation-direction: reverse;
+        }
+        
+        .div-8 {
+            animation-name: d1;
+            animation-duration: 5s;
+            position: relative;
+            animation-delay: 1s;
+            animation-direction: normal;
+        }
+        
+        .div-9 {
+            animation-name: d1;
+            animation-duration: 5s;
+            position: relative;
+            animation-direction: alternate;
+        }
+        
+        .div-10 {
+            color: red;
+            animation: infi-color infinite linear normal 5s 1s;
+        }
+        
+        .div-11 {
+            color: green;
+            animation: infi-hide infinite linear alternate 5s 1s;
+        }
+        
+        .div-12 {
+            color: blue;
+            animation: infi-move infinite ease reverse 5s 1s;
+            position: relative;
+        }
+        /* animation */
+        
+        @keyframes color {
+            from {
+                color: red;
+            }
+            to {
+                color: green;
+            }
+        }
+        
+        @keyframes width {
+            from {
+                width: 100%;
+            }
+            to {
+                width: 50%;
+            }
+        }
+        
+        @keyframes border {
+            0 {
+                border: 1px solid red;
+            }
+            50% {
+                border: 10px solid green;
+            }
+            100% {
+                border: 20px solid blue;
+            }
+        }
+        
+        @keyframes background {
+            from {
+                background-color: black;
+                color: white;
+            }
+            to {
+                background-color: white;
+                color: black;
+            }
+        }
+        
+        @keyframes position {
+            0 {
+                left: -1000px;
+            }
+            100% {
+                left: 1000px
+            }
+        }
+        
+        @keyframes display {
+            from {
+                opacity: 100%;
+                /* visibility: visible; */
+            }
+            to {
+                opacity: 0%;
+                /* visibility: hidden; */
+            }
+        }
+        
+        @keyframes d1 {
+            0% {
+                size: 50px;
+                background-color: white;
+                border: 1px red solid;
+                left: 1000px;
+                opacity: 100%;
+            }
+            25% {
+                size: 40px;
+                background-color: brown;
+                border: 10px green solid;
+                left: 500px;
+                opacity: 0%;
+            }
+            50% {
+                size: 20px;
+                background-color: purple;
+                border: 30px orange solid;
+                left: 0px;
+                opacity: 100%;
+            }
+            75% {
+                size: 10px;
+                background-color: silver;
+                border: 40px gold solid;
+                left: -500px;
+                opacity: 0%;
+            }
+            100% {
+                size: 0px;
+                background-color: #989854;
+                border: 50px #432124 solid;
+                left: -1000px;
+                opacity: 100%;
+            }
+        }
+        
+        @keyframes infi-color {
+            0% {
+                color: red;
+            }
+            25% {
+                color: blue;
+            }
+            50% {
+                color: green;
+            }
+            75% {
+                color: black;
+            }
+            100% {
+                color: white;
+            }
+        }
+        
+        @keyframes infi-hide {
+            0% {
+                opacity: 0%;
+            }
+            25% {
+                opacity: 100%;
+            }
+            50% {
+                opacity: 0%;
+            }
+            75% {
+                opacity: 100%;
+            }
+            100% {
+                opacity: 0%;
+            }
+        }
+        
+        @keyframes infi-move {
+            0% {
+                right: -1000px;
+            }
+            25% {
+                right: -500px;
+            }
+            50% {
+                right: 00px;
+            }
+            75% {
+                right: 500px;
+            }
+            100% {
+                right: 1000px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="div-1">DIV 1</div>
+            <div class="div-2">DIV 2</div>
+            <div class="div-3">DIV 3</div>
+            <div class="div-4">DIV 4</div>
+            <div class="div-5">DIV 5</div>
+            <div class="div-6">DIV 6</div>
+            <div class="div-7">Direction 1</div>
+            <div class="div-8">Direction 2</div>
+            <div class="div-9">Direction 3</div>
+            <div class="div-10">color change</div>
+            <div class="div-11">show hide</div>
+            <div class="div-12">moving</div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
